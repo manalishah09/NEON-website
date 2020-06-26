@@ -16,9 +16,20 @@
     }
     .nav-link{
       color: black;
-      font-weight: 700;
+      font-weight: 500;
+      margin-left: 10px;
+
 
     }
+    .nav-link:hover{
+      -ms-transform: scale(1.1); /* IE 9 */
+     -webkit-transform: scale(1.1); /* Safari 3-8 */
+     transform: scale(1.1); 
+    }
+    .nav-link:active{
+      border-bottom: solid turquoise;
+    }
+  
     .slider{
     height:600px;
      width: 100%;
@@ -46,8 +57,10 @@
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark justify-content-center" style="color:white" >
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#" style="font-weight: bolder; color: red; font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;"><b>n e o n</b></a>
-          <sub style="font-size: large; color: steelblue ;"><b>MITESH</b></sub>
+          <a class="navbar-brand" href="#" style="font-weight: bolder; color: red; font-size: xx-large;"><b>n e o n
+            <span style="font-size: large; color: steelblue ; font-weight: 400;"><b>MITESH</b></span>
+          </b></a>
+          
         </div>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mydropdown">
@@ -58,10 +71,10 @@
          
           
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="about.html">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
@@ -117,7 +130,13 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-
+<div class="container-fluid" style="background-color: white;">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <h2>About us</h2>
+    </div>
+  </div>
+</div>
 <footer class="bg-dark">
   <div class="container">
     <div class="row">
@@ -131,8 +150,8 @@
           <p class="footer-content">REACH US</p>
         <p class="footer-main-content">Mobile: 9 22 22 569 22 / 9 22 22 559 22<br>
            Office: 022 2895 99 67 , 9 22 22 579 22, 9 22 22 599 22,<br> 702 13 49 001<br>Email:
-           <span><a href="mailto:neonmitesh@gmail.com">neonmitesh@gmail.com</a></span> /
-           <span><a href="mailto:miteshneon@yahoo.com">miteshneon@yahoo.com</a></span> 
+           <span><a  href="mailto:neonmitesh@gmail.com" style="color: white;">neonmitesh@gmail.com</a></span> /
+           <span><a href="mailto:miteshneon@yahoo.com" style="color: white;">miteshneon@yahoo.com</a></span> 
            </p>
         </div>
         <div class="col-md-4 col-sm-12">
