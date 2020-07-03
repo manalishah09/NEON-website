@@ -39,63 +39,126 @@
     }
     .footer-content{
       margin-top: 20px;
-      text-align: center;
+      text-align: left;
       font-weight: 400;
       color: white;
       font-size: small;
     }
     .footer-main-content{
-      text-align: center;
+      text-align: left;
       color: whitesmoke;
       font-size: smaller;
 
     }
+    .heading-h2{
+      text-align: center; 
+      margin-top: 50px;
+       color: black; 
+       font-weight: 500;
+    }
+    hr{
+      width: 6%;
+      background-color: tomato !important;
+      margin: auto;
+      height: 4px;
+    }
+    .about-body{
+        font-size: small;
+        text-align: justify;
+    }
+    @media only screen and (max-width: 600px) {
+        .aboutimg{
+            width: 100% !important;
+            margin-left: 0px !important;
+            box-shadow: none!important;
+            margin-bottom: 10px !important;
+            
+        }
+        .read{
+        margin-left: 90px !important;        
+        }
+    }
+    .heading-h5{
+      text-align: center !important;
+      color: white;
+
+    }
+    .para{
+      margin-top: 10px;
+      color: white;
+      text-decoration: bold;
+      font-size: medium;
+    }
+    .hover-zoom:hover{
+      -ms-transform: scale(1.1); /* IE 9 */
+     -webkit-transform: scale(1.1); /* Safari 3-8 */
+     transform: scale(1.1); 
+    }
+    .footer-li{
+      font-size: small;
+      color: white;
+      text-align: left;
+    }
+    .block-content{
+      text-align: justify;
+      color: black;
+      font-size: small;
+
+    }
+    .quote-slider{
+      text-align: center !important;
+      background-color: turquoise;
+      opacity: 0.5;
+      align-self: center;
+    }
+    
+    
   </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark justify-content-center" style="color:white" >
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#" style="font-weight: bolder; color: red; font-size: xx-large;"><b>n e o n
-            <span style="font-size: large; color: steelblue ; font-weight: 400;"><b>MITESH</b></span>
-          </b></a>
+     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark justify-content-center" style="color:white" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="font-weight: bolder; color: red; font-size: xx-large;"><b>n e o n
+              <span style="font-size: large; color: steelblue ; font-weight: 400;"><b>MITESH</b></span>
+            </b></a>
+            
+          </div>
           
-        </div>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mydropdown">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="mydropdown">
-        <ul class="navbar-nav justify-content-center">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mydropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="mydropdown">
+          <ul class="navbar-nav justify-content-center">
+           
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">What's new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Knowledge Bank</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="#">What's new</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Knowledge Bank</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-       
-        </ul>
-      </div>
-        <button class="btn btn-success justify-content-end">Login</button>
-      
-      </div>
-      </nav>
+          </ul>
+        </div>
+          <button class="btn btn-success justify-content-end">Login</button>
+        
+        </div>
+        </nav>
     
 <div class="carousel slide" data-ride="carousel" id="myslider" data-interval="4000">
   <ul class="carousel-indicators">
@@ -133,13 +196,140 @@
 <div class="container-fluid" style="background-color: white;">
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <h2>About us</h2>
+      <h2 class="heading-h2">Know us...</h2>
+      <hr>
+      <p class="about-body mx-3 mt-3" >Neon Mitesh- Accountancy Firm, has acquired, in course of time, 
+        a reputation as a single window professional service firm rendering excellent quality services in the areas of Audit & Assurance,
+        taxation, financial and management consultancy, regulatory compliances and business valuations. In its journey, the firm has built
+        up a strong efficient and effective team of partners and other professionals having high expertise in the relevant areas of 
+        functioning, enabling the firm to deliver utmost satisfaction to the clients. The firm serves a wide range of clientele across 
+        the various industries, including financial sector. Our highly skilled and strongly motivated team enables us to render the best
+        professional services to the clients, exceeding their expectations.</p>
+        <button type="button" class="read btn btn-success mx-sm-3 mb-3" style="height:30px; text-align: center; font-size: small;" onclick="readmore" id="mybtn">Read More <span class="readmore" style="font-size: smaller;">>></span></button>
+
+         
     </div>
+    <div class="col-md-6 col-sm-12">
+      <img class="my-md-5 mr-md-2 ml-md-5 mx-sm-0 my-sm-0 aboutimg" src="img.jpg" style="width: 400px; height: 300px; text-align: center !important; box-shadow: 10px 10px 5px grey;">
+
+     </div>
   </div>
 </div>
+<div class="container-fluid">
+  <div class="row justify-content-center" style="text-align: center;">
+    <h2 class="heading-h2" style="text-align: center !important; color: white;">Our Services</h2>
+    
+  </div>
+  <div class="row">
+    <hr style="border: none;"> 
+      
+  </div>
+  <div class="row justify-content-center mx-5 mb-4 mt-3">
+    <h5 class="heading-h5">See what all we can do...</h5>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-4 col-sm-12 justify-content-center hover-zoom" style="text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      width="45" height="45"
+      viewBox="0 0 172 172"
+      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,1.34375c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125v73.90625c0,2.28437 1.74688,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74688 4.03125,-4.03125v-69.875h16.125v76.59375c0,2.28437 1.74688,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74688 4.03125,-4.03125v-80.625c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125zM40.3125,28.21875c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125v40.3125c0,2.28437 1.74688,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74688 4.03125,-4.03125v-36.28125h16.125v36.28125c0,2.28437 1.74687,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74688 4.03125,-4.03125v-40.3125c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125zM129,28.21875c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125v53.75c0,2.28437 1.74688,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-49.71875h16.125v49.71875c0,2.28437 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-53.75c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM49.35394,91.85266c-9.78156,-0.15485 -19.52374,2.93158 -27.58624,9.06244l-5.23853,4.03125l-0.40417,0.40418l-1.34375,1.34375c-0.80625,0.80625 -1.2099,1.74635 -1.2099,2.82135v43h-8.19635c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h12.09375c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-45.4198l5.1073,-3.89478c10.61563,-8.0625 24.58853,-9.67657 36.81665,-4.30157l34.6698,15.58698c1.6125,0.67188 2.95572,2.01667 3.49322,3.76355c0.5375,1.74688 0.53803,3.4948 -0.13385,5.1073c-0.67187,1.6125 -2.01458,2.82135 -3.62708,3.49323c-1.6125,0.67188 -3.4948,0.53802 -5.1073,-0.13385l-26.875,-11.9599c-2.01562,-0.94063 -4.43437,0 -5.375,2.01563c-0.94063,2.01563 0,4.43437 2.01563,5.375l26.875,11.9599c3.62812,1.6125 7.6599,1.74583 11.28803,0.2677c0.5375,-0.13438 1.07447,-0.40312 1.4776,-0.67187c0.26875,0 0.40365,-0.13385 0.53803,-0.13385l51.3302,-21.77032c1.6125,-0.67187 3.4948,-0.67187 5.1073,0c1.6125,0.67188 2.9552,2.0172 3.62708,3.6297c0.67188,1.6125 0.67188,3.49218 0,5.10468c-0.67187,1.6125 -2.01458,2.95782 -3.62708,3.6297l-75.78802,31.97968c-6.04687,2.55312 -13.03385,2.42085 -18.94635,-0.5354l-31.9823,-15.5896c-2.01562,-0.94063 -4.43437,-0.13385 -5.375,1.88177c-0.94062,2.01563 -0.13385,4.43437 1.88178,5.375l31.9823,15.58698c4.3,2.15 8.86823,3.09167 13.57135,3.09167c4.03125,0 8.19688,-0.8073 12.09375,-2.4198l75.78802,-31.97968c3.62813,-1.47812 6.4479,-4.43437 7.92603,-8.0625c1.6125,-3.62813 1.6146,-7.6599 0.13647,-11.28803c-1.47813,-3.62812 -4.43437,-6.45053 -8.0625,-7.92865c-3.62813,-1.47812 -7.6599,-1.47865 -11.28802,0.13385l-1.61407,0.67188c-3.7625,-6.31563 -11.55468,-9.00313 -18.54218,-6.04687l-15.58698,6.5849c-2.01562,0.80625 -2.95835,3.22553 -2.1521,5.24115c0.67188,1.47812 2.15105,2.4198 3.76355,2.4198c0.5375,0 1.07395,-0.13595 1.61145,-0.27032l15.5896,-6.5849c2.82187,-1.20938 5.91093,-0.26823 7.79218,1.88177l-31.57813,13.4375c0.40313,-6.04687 -2.82187,-11.9578 -8.73437,-14.51093l-34.9375,-15.5896c-5.54297,-2.46914 -11.4266,-3.72838 -17.29553,-3.82129z"></path></g></g></svg>
+    <p class="para">Goods and Service Tax</p>
+    </div>
+    <div class="col-md-4 col-sm-12 justify-content-center hover-zoom" style="text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      width="40" height="40"
+      viewBox="0 0 172 172"
+      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M50.16667,7.16667c-11.78924,0 -21.5,9.71076 -21.5,21.5c0,11.78924 9.71076,21.5 21.5,21.5c3.43338,0 6.63994,-0.90685 9.53223,-2.36556l-0.26595,0.26595l16.43295,16.43294h-75.86589v100.33333h172v-100.33333h-65.73177l-10.75,10.75h39.7526l6.36882,5.48698c0,0.00466 0,0.00933 0,0.014c-0.49347,2.76981 0.6828,5.97634 3.06543,8.35645c2.83082,2.83194 6.76646,3.90787 9.72819,2.65951l6.81673,5.8789v34.04167l-6.83073,5.89291c-0.81992,-0.34726 -1.7352,-0.52273 -2.7015,-0.51791c-2.44254,0.02532 -5.0194,1.19521 -6.9987,3.17741c-2.36856,2.37526 -3.53824,5.56772 -3.05143,8.32845l-6.39681,5.51497h-98.54167l-6.38281,-5.50098c0.48787,-2.76656 -0.68782,-5.96615 -3.06543,-8.34245c-2.14048,-2.14389 -4.9682,-3.32734 -7.55859,-3.16341c-0.7606,0.04954 -1.482,0.21456 -2.1416,0.48991l-6.83073,-5.8789v-34.04167l6.83073,-5.89291c2.95711,1.23428 6.87657,0.15969 9.7002,-2.6595c2.36856,-2.37526 3.53824,-5.56772 3.05143,-8.32845l6.39681,-5.51497h28.38672l-29.28255,29.28256v20.26822l49.55078,-49.55078l10.75,-10.75l16.50293,-16.50293c2.80406,1.35099 5.90065,2.1696 9.19629,2.1696c11.78924,0 21.5,-9.71076 21.5,-21.5c0,-11.78924 -9.71076,-21.5 -21.5,-21.5c-11.78924,0 -21.5,9.71076 -21.5,21.5c0,3.29564 0.81861,6.39223 2.16959,9.19629l-16.50293,16.50293l-16.43294,-16.43294l-0.26595,0.26595c1.45871,-2.89229 2.36556,-6.09885 2.36556,-9.53223c0,-11.78924 -9.71076,-21.5 -21.5,-21.5zM50.16667,21.5c4.04293,0 7.16667,3.12374 7.16667,7.16667c0,4.04293 -3.12374,7.16667 -7.16667,7.16667c-4.04293,0 -7.16667,-3.12374 -7.16667,-7.16667c0,-4.04293 3.12374,-7.16667 7.16667,-7.16667zM121.83333,21.5c4.04292,0 7.16667,3.12374 7.16667,7.16667c0,4.04293 -3.12374,7.16667 -7.16667,7.16667c-4.04292,0 -7.16667,-3.12374 -7.16667,-7.16667c0,-4.04293 3.12374,-7.16667 7.16667,-7.16667zM86,90.47917c-2.29333,0 -4.47861,0.36584 -6.59277,0.88184l-18.91048,18.91048c-0.28667,1.43333 -0.47591,2.89018 -0.47591,4.39518c0,13.35867 11.6315,24.1875 25.97917,24.1875c14.34767,0 25.97917,-10.82883 25.97917,-24.1875c0,-13.35867 -11.6315,-24.1875 -25.97917,-24.1875zM132.58333,104.8125c-5.93706,0 -10.75,4.41186 -10.75,9.85417c0,5.44231 4.81294,9.85417 10.75,9.85417c5.93706,0 10.75,-4.41186 10.75,-9.85417c0,-5.44231 -4.81294,-9.85417 -10.75,-9.85417z"></path></g></g></svg>
+      <p class="para">Income Tax Consultancy</p>
+
+    </div>
+    <div class="col-md-4 col-sm-12 justify-content-center hover-zoom" style="text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="40" height="40"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M27.52,17.2c-5.6587,0 -10.32,4.6613 -10.32,10.32v116.96c0,5.6587 4.6613,10.32 10.32,10.32h116.96c5.6587,0 10.32,-4.6613 10.32,-10.32v-116.96c0,-5.6587 -4.6613,-10.32 -10.32,-10.32zM27.52,24.08h116.96c1.9437,0 3.44,1.4963 3.44,3.44v116.96c0,1.9437 -1.4963,3.44 -3.44,3.44h-116.96c-1.9437,0 -3.44,-1.4963 -3.44,-3.44v-116.96c0,-1.9437 1.4963,-3.44 3.44,-3.44zM37.84,37.84v6.88h96.32v-6.88zM51.6,58.48v6.88h68.8v-6.88zM37.84,79.12v6.88h96.32v-6.88z"></path></g></g></svg>
+<p class="para">Accounting Services</p>
+    
+</div>
+
+  </div>
+  <div class="row my-5">
+    <div class="col-md-6 col-sm-12 justify-content-center hover-zoom" style="text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="48" height="48"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M57.33333,28.66667c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v7.16667h114.66667v-7.16667c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM28.66667,57.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v57.33333c0,7.91917 6.41417,14.33333 14.33333,14.33333h86c7.91917,0 14.33333,-6.41417 14.33333,-14.33333h-71.66667c-15.83117,0 -28.66667,-12.8355 -28.66667,-28.66667zM43,64.5v35.83333c0,7.91917 6.41417,14.33333 14.33333,14.33333h86c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-35.83333z"></path></g></g></svg>
+      <p class="para">Sales Tax / <br>GST Consultancy</p>
+
+    </div>
+    <div class="col-md-6 col-sm-12 justify-content-center hover-zoom" style="text-align: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="50"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M110.8325,7.095l-15.05,5.9125l2.6875,13.0075c-1.04812,1.04813 -2.16344,2.2575 -3.3325,3.5475l-12.9,-2.9025l-6.3425,14.835l10.965,7.31c-0.12094,1.81406 -0.12094,3.66844 0,5.4825l-11.2875,6.88l5.9125,15.05l12.685,-2.58c1.14219,1.37063 2.39188,2.62031 3.7625,3.7625l-2.9025,12.685l14.9425,6.3425l7.31,-10.965c1.8275,0.12094 3.5475,0.12094 5.375,0l6.9875,11.2875l15.05,-5.9125l-2.9025,-13.76c1.35719,-1.12875 2.52625,-2.41875 3.655,-3.7625l13.115,3.3325l6.45,-15.05l-11.395,-6.9875c0.1075,-1.78719 0.1075,-3.48031 0,-5.2675l11.2875,-6.9875l-5.9125,-15.05l-13.115,2.9025c-1.12875,-1.35719 -2.40531,-2.63375 -3.7625,-3.7625l2.9025,-12.685l-14.9425,-6.3425l-6.9875,10.965c-1.80062,-0.17469 -3.61469,-0.26875 -5.375,-0.1075zM120.4,37.84c7.60563,0 13.76,6.15438 13.76,13.76c0,7.60563 -6.15437,13.76 -13.76,13.76c-7.60562,0 -13.76,-6.15437 -13.76,-13.76c0,-7.60562 6.15438,-13.76 13.76,-13.76zM46.5475,68.8l-2.15,13.76c-1.89469,0.60469 -3.81625,1.46469 -5.6975,2.4725l-11.5025,-8.385l-12.04,12.04l7.955,11.61c-0.95406,1.88125 -1.70656,3.77594 -2.365,5.6975l-13.8675,2.58v16.77l13.76,2.4725c0.60469,1.90813 1.45125,3.91031 2.4725,5.805l-8.385,11.18l12.04,12.04l11.61,-7.955c1.86781,0.95406 3.78938,1.70656 5.6975,2.365l2.15,13.8675h16.8775l2.4725,-13.76c1.92156,-0.60469 3.91031,-1.45125 5.805,-2.4725l11.5025,8.385l12.04,-12.04l-8.2775,-11.61c0.94063,-1.86781 1.59906,-3.78937 2.2575,-5.6975l14.2975,-2.58v-16.8775l-14.0825,-2.15c-0.60469,-1.89469 -1.46469,-3.82969 -2.4725,-5.6975l8.2775,-11.5025l-11.9325,-12.47l-11.7175,8.385c-1.84094,-0.94062 -3.69531,-1.70656 -5.59,-2.365l-2.15,-13.8675zM55.04,103.2c7.56531,0 13.76,6.19469 13.76,13.76c0,7.56531 -6.19469,13.76 -13.76,13.76c-7.56531,0 -13.76,-6.19469 -13.76,-13.76c0,-7.56531 6.19469,-13.76 13.76,-13.76z"></path></g></g></svg>
+      <p class="para">Financial / Loan & <br>Property Consultancy</p>
+
+    </div>
+  </div>
+   
+  
+
+</div>
+
+<div class="container-fluid justify-content-center" style="background-color: white;">
+  <div class="row pb-5">
+    <div class="col-12">
+      <h2 class="heading-h2">Testimonials</h2>
+    <hr style="border: none;">
+    </div>
+
+  </div>
+  <div class="row">
+  <div class="col-12 justify-content-center quote-slider">
+    <div class="carousel slide" data-ride="carousel" id="myslider" data-interval="4000">
+      <!-- <ul class="carousel-indicators">
+        <li data-target="#myslider" data-slide-to="0" class="active"></li>
+        <li data-target="#myslider" data-slide-to="1"></li>
+        <li data-target="#myslider" data-slide-to="2"></li>
+      </ul> -->
+      <div class="carousel-inner justify-content-center">
+          
+         <blockquote class="block-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+
+        </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+
+          </blockquote>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+</div>
+
 <footer class="bg-dark">
   <div class="container">
     <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <p class="footer-content">IMP LINKS</p>
+        
+        <p class="footer-li"><a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">PAN / TAN</a></p>
+        <p class="footer-li"><a href="https://www.incometaxindiaefiling.gov.in/home"target="_blank">E-Filling</a></p>
+        <p class="footer-li"><a href="https://www.incometaxindiaefiling.gov.in/home"target="_blank">Online Payments</a></p>
+        <p class="footer-li"><a href="https://www.incometaxindia.gov.in/Pages/downloads/challans.aspx" target="_blank">Challans</a></p>
+      
+        
+        <p class="footer-main-content"></p>
+      </div>
       <div class="col-md-4 col-sm-12">
         <p class="footer-content">NEON MITESH</p>
         <p class="footer-main-content">14, First floor, Saraswati Bhuvan, Behind Bhoomi Saraswati Bldg.,
@@ -154,24 +344,30 @@
            <span><a href="mailto:miteshneon@yahoo.com" style="color: white;">miteshneon@yahoo.com</a></span> 
            </p>
         </div>
-        <div class="col-md-4 col-sm-12">
-          <p class="footer-content">CONNECT</p>
-          <p class="footer-main-content"></p>
-        </div>
+        
       
     </div>
+  </div>
+    <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-12">      <p style="text-align: center; font-size: smaller;">Website created by <a href="mailto:manalishah69490@gmail.com">Manali Shah.</a></p>
+      <div class="col-lg-12">
+      <p class="mt-3" style="text-align: center; font-size: smaller;">Website created by <a href="mailto:manalishah69490@gmail.com">Manali Shah.</a></p>
       </div>
 
     </div>
-
   </div>
+
+  
   
      
     
   
 </footer>
+<script type="text/javascript">
+  document.getElementById("mybtn").onclick = function () {
+      location.href = "about.html";
+  };
+</script>
 </body>
 
 
