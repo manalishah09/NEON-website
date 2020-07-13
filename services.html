@@ -71,6 +71,7 @@
         }
         .card-shadow{
           margin-top: 50px;
+          padding: 10px;
         }
     }
     .about-body{
@@ -171,7 +172,7 @@
          
           </ul>
         </div>
-          <button class="btn btn-success justify-content-end">Login</button>
+          <button class="btn btn-success justify-content-end" onclick="login()" id="login">Login</button>
         
         </div>
         </nav>
@@ -182,14 +183,14 @@
         <div class="centered">
             <h3 style="text-align:center;">Services</h3>
             <a href="index.html">Home</a> / Services        </div>
-            <div class="container-fluid" style="background-color: #35c9be;">
+            <div class="container-fluid" style="background-color: #35c9be; padding-bottom: 40px;">
               <div class="row">
                 <div class="col-12">
                   
                 </div>
 
               </div>
-              <div class="container" style="background-color: #2fb5ab; margin-top: 40px; margin-bottom: 40px;">
+              <div class="container" style="background-color: #2fb5ab; margin-top: 40px; padding-bottom: 40px;">
                   <div class="row">
                     <div class="col-12">
                       <h2 class="heading-h2" style="color: white;">Services provided by us...</h2>
@@ -297,6 +298,7 @@
                             </div>
                             
                            </div>
+                           
                       
                     
                      
@@ -352,5 +354,12 @@
               
             
           </footer>
+          <script type="text/javascript">
+          function login(){
+            location.href="login.html";
+          }
+          
+          
+          </script>
         </body>
         </html>

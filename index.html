@@ -144,7 +144,7 @@
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             
             <li class="nav-item">
@@ -159,7 +159,7 @@
          
           </ul>
         </div>
-          <button class="btn btn-success justify-content-end">Login</button>
+          <button class="btn btn-success justify-content-end" onclick="login()" id="login">Login</button>
         
         </div>
         </nav>
@@ -400,6 +400,9 @@ style=" fill:#000000; margin-bottom:15px;"><g fill="none" fill-rule="nonzero" st
   document.getElementById("mybtn").onclick = function () {
       location.href = "about.html";
   };
+  function login(){
+    location.href="login.html";
+  }
 </script>
 </body>
 
