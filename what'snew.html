@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>n e o n</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="black.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <style>
+        body{
+        font-family: 'Open Sans', sans-serif;
+        
+        }
+    </style>
+</head>
+    <body style="background-color: #35c9be">
+        Topic <span id="topic"></span>
+        URL<span id="url"></span>
+        <button onclick="create()" id="create">Update</button>
+        <script type="text/javascript">
+       
+       
+       
+       
+       
+        var topic=document.getElementById("topic").innerHTML=localStorage.getItem("topic");
+        document.getElementById("url").innerHTML=localStorage.getItem("url");
+        
+        
+        function create(){
+        var h1 = document.createElement('h1');    
+        h1.textContent = topic;
+        h1.setAttribute('class', 'note');
+        document.body.appendChild(h1);
+        
+        }
+        </script>
+        </body>
+
+</html>

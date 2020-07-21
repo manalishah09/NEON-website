@@ -48,6 +48,7 @@
             <br>
                 <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>What's New</b></h4></div>
                 <br>
+                
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Topic" style="margin-bottom: 9px;" id="topic">
                     
@@ -56,8 +57,7 @@
                     <button type="button" class="btn btn-success" style="width: 100%;" onclick="submit()" id="submit">Submit</button>
 
 
-
-                
+                                
                 </div>
             </div>
         </div>
@@ -76,6 +76,15 @@
             window.history.forward(); 
         function noBack() { 
             window.history.forward(); 
+        }
+        function submit(){
+            var topic=document.getElementById("topic").value;
+            var url=document.getElementById("url").value;
+            localStorage.setItem("topic",topic);
+            localStorage.setItem("url",url);
+            alert(topic);
+            alert(url);
+
         }
 </script>
 </body>
