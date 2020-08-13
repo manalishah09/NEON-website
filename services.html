@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="black.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="cssneon.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -16,121 +18,21 @@
 
   <style>
       
-      body{
-    font-family: 'Open Sans', sans-serif !important;
-    }
-    .nav-link{
-      color: black;
-      font-weight: 500;
-      margin-left: 10px;
-
-
-    }
-    .nav-link:hover{
-      -ms-transform: scale(1.1); /* IE 9 */
-     -webkit-transform: scale(1.1); /* Safari 3-8 */
-     transform: scale(1.1); 
-    }
-    .nav-link:active{
-      border-bottom: solid turquoise;
-    }
-    .footer-content{
-      margin-top: 20px;
-      text-align: left;
-      font-weight: 400;
-      color: white;
-      font-size: small;
-    }
-    .footer-main-content{
-      text-align: left;
-      color: whitesmoke;
-      font-size: smaller;
-
-    }
-    .centered{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        
-    }
-    a:hover{
-        text-decoration: none;
-    }
-    .line{
-        
-        width: 15%;
-       align-content: center; 
-       border: 1px solid red;
-       
-    }
-    @media only screen and (max-width: 600px) {
-        .aboutimg{
-            width: 100% !important;
-            margin-left: 0px;
-            
-        }
-        .card-shadow{
-          margin-top: 50px;
-          padding: 10px;
-        }
-    }
-    .about-body{
-        font-size: small;
-        text-align: justify;
-    }
-    .heading-h2{
-      text-align: center; 
-      margin-top: 50px;
-       color: black; 
-       font-weight: 500;
-    }
+     a:hover{
+       text-decoration: none;
+     }
+  
+   
+   
     
-    @media only screen and (max-width: 600px){
-      .about-body{
-        text-align: justify !important;
-        margin-top: 10px !important;
-      }
-    
-    }
-    .size{
-      font-size: small;
-    }
-    hr{
-      width: 6%;
-      
-      background-color: tomato !important;
-      margin: auto;
-      height: 4px;
-    }
-    .footer-li{
-      font-size: small;
-      color: white;
-      text-align: left;
-    }
+
+   
+  
+   
     a{
       color: white;
     }
-    .my-card
-{
-    position:absolute;
-    left:40%;
-    top:-30px;
-    border-radius:50%;
-    border-color:#2fb5ab;
     
-}
-.card-shadow:hover{
-  /* box-shadow:5px 5px 3px lightpink; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.452), 0 6px 20px 0 rgba(0, 0, 0, 0.452); 
-     -ms-transform: scale(1.02); 
-     -webkit-transform: scale(1.02); 
-     transform: scale(1.02); 
-}
-.card-shadow-second{
-  margin-top: 50px;
-}
 
 </style>
 </head>
@@ -165,10 +67,19 @@
             <li class="nav-item">
               <a class="nav-link" href="#">What's new</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Knowledge Bank</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Knowledge Bank
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="links.html">Links</a>
+
+                <a class="dropdown-item" href="acts.html">Acts</a>
+                <a class="dropdown-item" href="rules.html">Rules</a>
+                <a class="dropdown-item" href="forms.html">Forms</a>
+
+              </div>
+            </li>  <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
          
@@ -183,8 +94,9 @@
         <img src="try.jpg" style="width: 100%; height: 400px; background-size: cover;
         background-position: center !important; background-attachment: fixed; background-color: white; opacity: 0.6;object-fit: cover;">
         <div class="centered">
-            <h3 style="text-align:center;">Services</h3>
-            <a href="index.html">Home</a> / Services        </div>
+          <h1 class="breadcrumbs">Services</h1>
+          <p class="breadcrubs">  <a href="index.html">Home</a> / Services</p>
+        </div>       
             <div class="container-fluid" style="background-color: #35c9be; padding-bottom: 40px;">
               <div class="row">
                 <div class="col-12">

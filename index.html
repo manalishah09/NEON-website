@@ -8,13 +8,18 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="cssneon.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
  
 </head>
@@ -49,9 +54,22 @@
             <li class="nav-item">
               <a class="nav-link" href="#">What's new</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Knowledge Bank</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Knowledge Bank
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="links.html">Links</a>
+
+                <a class="dropdown-item" href="acts.html">Acts</a>
+                <a class="dropdown-item" href="rules.html">Rules</a>
+                <a class="dropdown-item" href="forms.html">Forms</a>
+
+              </div>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Knowledge Bank</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
@@ -96,10 +114,10 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-<div class="container-fluid" style="background-color: white;">
+<div class="container-fluid know-us">
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <h2 class="heading-h2">Know us...</h2>
+      <h2 class="heading-h2">Know Us...</h2>
       <hr>
       <p class="about-body mx-3 mt-3" >Neon Mitesh- Accountancy Firm, has acquired, in course of time, 
         a reputation as a single window professional service firm rendering excellent quality services in the areas of Audit & Assurance,
@@ -108,7 +126,8 @@
         functioning, enabling the firm to deliver utmost satisfaction to the clients. The firm serves a wide range of clientele across 
         the various industries, including financial sector. Our highly skilled and strongly motivated team enables us to render the best
         professional services to the clients, exceeding their expectations.</p>
-        <button type="button" class="read btn btn-success mx-sm-3 mb-3" style="height:30px; text-align: center; font-size: small;" onclick="readmore" id="mybtn">Read More <span class="readmore" style="font-size: smaller;">>></span></button>
+        <!-- <button type="button" class="read btn btn-success mx-sm-3 mb-3" style="height:30px; text-align: center; font-size: small;" onclick="readmore" id="mybtn">Read More <span class="readmore" style="font-size: smaller;">>></span></button> -->
+        <button type="button" class="read btn btn-outline-success mx-sm-3 mb-3" onclick="readmore" id="mybtn">Read More</button>
 
          
     </div>
@@ -179,10 +198,9 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
 </div>
 
-<div class="container-fluid justify-content-center" style="background-color:#a3acd2
 
 
-">
+<div class="container-fluid section-testimonial justify-content-center">
   <div class="row pb-5">
     <div class="col-12">
       <h2 class="heading-h2" style="color: white;">Testimonials</h2>
@@ -207,17 +225,18 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         
             <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-              width="35" height="35"
+              width="40" height="40"
               viewBox="0 0 172 172"
               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
                        
 
             </b></h4></div>
-            <div class="text-center mt-2 p-2"><p style="text-align: justify; color: black; font-size: smaller;">
-              <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+            <div class="text-center px-3 pb-3 testimonial-font">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
 
-              </blockquote>
-            </p>
+              
+            <br>
+            <br>
             <p><i>-Miss Manali Shah</i></p>
             
             </div>
@@ -227,26 +246,50 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
         </div>
         <div class="carousel-item block-content quote-slider">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="30" height="30"
-          viewBox="0 0 172 172"
-          style=" fill:#000000; margin-bottom:15px;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
-         
-         
+          <div class="card mx-sm-1  card-shadow  justify-content-center" style="border-color: white; background-color: white;">
           
-          <p><i>-Miss Manali Shah</i></p>
+        
+            <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="40" height="40"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
+                       
 
+            </b></h4></div>
+            <div class="text-center px-3 pb-3 testimonial-font">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+
+              
+            <br>
+            <br>
+            <p><i>-Miss Manali Shah</i></p>
+            
+            </div>
+        </div>
         </div>
         <div class="carousel-item block-content quote-slider">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000; margin-bottom:15px;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
-<br>          
-<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+          <div class="card mx-sm-1  card-shadow  justify-content-center" style="border-color: white; background-color: white;">
+          
+        
+            <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="40" height="40"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
+                       
 
-          </blockquote>
-          <p><i>-Miss Manali Shah</i></p>
+            </b></h4></div>
+            <div class="text-center px-3 pb-3 testimonial-font">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+
+              
+            <br>
+            <br>
+            <p><i>-Miss Manali Shah</i></p>
+            
+            </div>
+        </div>
 
                  </div>
       </div>
@@ -323,6 +366,7 @@ style=" fill:#000000; margin-bottom:15px;"><g fill="none" fill-rule="nonzero" st
   function login(){
     location.href="login.html";
   }
+
 </script>
 </body>
 
