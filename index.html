@@ -8,24 +8,30 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="cssneon.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
 
 
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+.center-bottom{
+position: absolute;
+bottom: 300px;
+right: 16px;
+left: 20px;
+}
+</style>
 
- 
 </head>
 <body>
 
-     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark justify-content-center" style="color:white" >
+     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark justify-content-center" style="color:white; font-family: Arial, Helvetica, sans-serif;" >
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#" style="font-weight: bolder; color: red; font-size: xx-large;"><b>n e o n
@@ -37,8 +43,8 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mydropdown">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="mydropdown">
-          <ul class="navbar-nav justify-content-center">
+          <div class="collapse navbar-collapse justify-content-end" id="mydropdown">
+          <ul class="navbar-nav justify-content-end">
            
             
             <li class="nav-item">
@@ -50,33 +56,19 @@
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#">What's new</a>
-            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <a class="nav-link" href="links.html">
                 Knowledge Bank
               </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="links.html">Links</a>
-
-                <a class="dropdown-item" href="acts.html">Acts</a>
-                <a class="dropdown-item" href="rules.html">Rules</a>
-                <a class="dropdown-item" href="forms.html">Forms</a>
-
-              </div>
+             
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Knowledge Bank</a>
-            </li> -->
+          
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
          
           </ul>
         </div>
-          <button class="btn btn-success justify-content-end" onclick="login()" id="login">Login</button>
         
         </div>
         </nav>
@@ -89,22 +81,16 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="slide1.jpg" class="slider">
-      <div class="carousel-caption">
-        <h2 class="w3-animate-zoom">Hey, hi now get lost, okay.</h2>
-        </div>
+      <img src="tax.jpg" class="slider">
+      
     </div>
     <div class="carousel-item">
-      <img src="slide2.jpg" class="slider">
-      <div class="carousel-caption">
-        <h2 class="w3-animate-zoom	">Hey, hi now get lost, okay.</h2>
-        </div>
+      <img src="slide2 -2.jpg" class="slider">
+     
     </div>
     <div class="carousel-item">
       <img src="slide3.jpg" class="slider">
-      <div class="carousel-caption">
-        <h2 class="w3-animate-zoom">Hey, hi now get lost, okay.</h2>
-        </div>
+     
     </div>
   </div>
   <a class="carousel-control-prev" href="#myslider" data-slide="prev">
@@ -117,22 +103,22 @@
 <div class="container-fluid know-us">
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <h2 class="heading-h2">Know Us...</h2>
-      <hr>
+      <h2 class="heading-h2">Know Us</h2>
+      <!-- <hr> -->
       <p class="about-body mx-3 mt-3" >Neon Mitesh- Accountancy Firm, has acquired, in course of time, 
         a reputation as a single window professional service firm rendering excellent quality services in the areas of Audit & Assurance,
         taxation, financial and management consultancy, regulatory compliances and business valuations. In its journey, the firm has built
         up a strong efficient and effective team of partners and other professionals having high expertise in the relevant areas of 
-        functioning, enabling the firm to deliver utmost satisfaction to the clients. The firm serves a wide range of clientele across 
+        functioning, enabling the firm to deliver utmost satisfaction to the clients.<br><br> The firm serves a wide range of clientele across 
         the various industries, including financial sector. Our highly skilled and strongly motivated team enables us to render the best
         professional services to the clients, exceeding their expectations.</p>
         <!-- <button type="button" class="read btn btn-success mx-sm-3 mb-3" style="height:30px; text-align: center; font-size: small;" onclick="readmore" id="mybtn">Read More <span class="readmore" style="font-size: smaller;">>></span></button> -->
-        <button type="button" class="read btn btn-outline-success mx-sm-3 mb-3" onclick="readmore" id="mybtn">Read More</button>
+        <button type="button" class="read btn btn-success mx-sm-3 mb-3" onclick="readmore" id="mybtn">Read More</button>
 
          
     </div>
     <div class="col-md-6 col-sm-12">
-      <img class="my-md-5 mr-md-2 ml-md-5 mx-sm-0 my-sm-0 aboutimg" src="img.jpg" style="width: 400px; height: 300px; text-align: center !important; box-shadow: 10px 10px 5px grey;">
+      <img class="my-md-5 mr-md-2 ml-md-5 mx-sm-0 my-sm-0 aboutimg" src="about-us.jpg" style="text-align: center !important; box-shadow: 10px 10px 5px grey;">
 
      </div>
   </div>
@@ -143,11 +129,10 @@
     
   </div>
   <div class="row">
-    <hr style="border: none;"> 
       
   </div>
   <div class="row justify-content-center mx-5 mb-4 mt-3">
-    <h5 class="heading-h5">See what all we can do...</h5>
+    <h5 class="heading-h5" style="color:white;">See what all we can do...</h5>
   </div>
   <div class="row mt-5">
     <div class="col-md-4 col-sm-12 justify-content-center hover-zoom" style="text-align: center;">
@@ -198,12 +183,76 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
 </div>
 
+<div class="container-fluid" style="background-color:#E8E8E8">
+  <div class="row">
+    <div class="col-md-4 col-sm-12 justify-content-center">
+        <div class="card index-card">
+          
+          <div class="card-body">
+            <p class="index-card-heading">Mission<span>
+              <svg class="index-card-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="60" height="60"
+              viewBox="0 0 172 172"
+              style=" fill:#000000; float:right;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M83.85,19.35v4.3h-70.95c-2.35156,0 -4.3,1.94844 -4.3,4.3v8.6c0,2.35156 1.94844,4.3 4.3,4.3h2.15v75.25c-2.35156,0 -4.3,1.94844 -4.3,4.3v6.45c0,2.35156 1.94844,4.3 4.3,4.3h68.8v0.93223l-26.18633,18.8041c-0.5543,-0.25195 -1.15899,-0.38633 -1.76367,-0.38633c-2.37676,0 -4.3,1.92324 -4.3,4.3c0,2.37676 1.92324,4.3 4.3,4.3c2.37676,0 4.3,-1.92324 4.3,-4.3c0,-0.14277 -0.0084,-0.28555 -0.0252,-0.42832l23.6752,-16.99844v6.67676h4.3v-6.4752l23.6752,16.82207c-0.0168,0.13438 -0.0252,0.26875 -0.0252,0.40312c0,2.37676 1.92324,4.3 4.3,4.3c2.37676,0 4.3,-1.92324 4.3,-4.3c0,-2.37676 -1.92324,-4.3 -4.3,-4.3c-0.62148,0 -1.22617,0.13438 -1.78887,0.39473l-26.16113,-18.59414v-1.15059h68.8c2.35156,0 4.3,-1.94844 4.3,-4.3v-6.45c0,-2.35156 -1.94844,-4.3 -4.3,-4.3v-75.25h2.15c2.35156,0 4.3,-1.94844 4.3,-4.3v-8.6c0,-2.35156 -1.94844,-4.3 -4.3,-4.3h-70.95v-4.3zM12.9,27.95h146.2v8.6h-6.45v83.85h4.3v6.45h-141.9v-6.45h4.3v-83.85h-6.45zM25.8,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM34.4,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM43,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM51.6,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM60.2,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM68.8,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM77.4,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM86,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM94.6,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM103.2,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM111.8,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM120.4,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM129,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM137.6,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM146.2,36.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM126.85,51.6c-2.37676,0 -4.3,1.92324 -4.3,4.3c0,0.37793 0.05039,0.74746 0.15117,1.10859l-26.99258,26.98418c-0.36113,-0.09238 -0.73066,-0.14277 -1.10859,-0.14277c-0.37793,0 -0.74746,0.05039 -1.10859,0.15117l-18.38418,-18.39258c0.09238,-0.36113 0.14277,-0.73066 0.14277,-1.10859c0,-2.37676 -1.92324,-4.3 -4.3,-4.3c-2.37676,0 -4.3,1.92324 -4.3,4.3c0,0.37793 0.05039,0.74746 0.15117,1.10859l-22.69258,22.68418c-0.36113,-0.09238 -0.73066,-0.14277 -1.10859,-0.14277c-2.37676,0 -4.3,1.92324 -4.3,4.3c0,2.37676 1.92324,4.3 4.3,4.3c2.37676,0 4.3,-1.92324 4.3,-4.3c0,-0.37793 -0.05039,-0.74746 -0.15117,-1.10859l22.69258,-22.68418c0.36113,0.09238 0.73066,0.14277 1.10859,0.14277c0.37793,0 0.74746,-0.05039 1.10859,-0.15117l18.38418,18.39258c-0.09238,0.36113 -0.14277,0.73066 -0.14277,1.10859c0,2.37676 1.92324,4.3 4.3,4.3c2.37676,0 4.3,-1.92324 4.3,-4.3c0,-0.37793 -0.05039,-0.74746 -0.15117,-1.10859l26.99258,-26.98418c0.36113,0.09238 0.73066,0.14277 1.10859,0.14277c2.37676,0 4.3,-1.92324 4.3,-4.3c0,-2.37676 -1.92324,-4.3 -4.3,-4.3zM25.8,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM34.4,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM43,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM51.6,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM60.2,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM68.8,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM77.4,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM86,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM94.6,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM103.2,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM111.8,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM120.4,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM129,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM137.6,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM146.2,116.1c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15z"></path></g></g></svg>
+            </span>
+            </p>
+            <br>
+            <br>
+          
+              <p class="index-card-body"> To provide reliable professional services with integrity, excellence and confidentiality in the system of our firm to meet our customer's individual requests.
+          </p>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 justify-content-center">
+      <div class="card index-card">
+          
+        <div class="card-body">
+          <p class="index-card-heading">Vision<span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="60" height="60"
+viewBox="0 0 172 172"
+style=" fill:#000000; float:right"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M68.8,10.32c-32.24656,0 -58.48,26.23344 -58.48,58.48c0,32.24656 26.23344,58.48 58.48,58.48c12.77306,0 24.58052,-4.13398 34.19844,-11.11281l45.21719,45.21719l9.72875,-9.72875l-44.8275,-44.8275c6.64724,-7.75285 11.32183,-17.24491 13.19563,-27.70813h-6.9539c-4.79536,23.52272 -25.63924,41.28 -50.5586,41.28c-27.29094,0 -49.64136,-21.31292 -51.42531,-48.16h15.00969l19.21563,-19.21563l41.28,41.28l22.06437,-22.06437h46.73563v-6.88h-49.58437l-19.21563,19.21563l-41.28,-41.28l-22.06437,22.06437h-12.16094c1.78395,-26.84708 24.13438,-48.16 51.42531,-48.16c24.91936,0 45.76324,17.75728 50.5586,41.28h6.9539c-4.89512,-27.33424 -28.79194,-48.16 -57.5125,-48.16z"></path></g></g></svg></span> </span> </p>
+          </p>
+          <br>
+          <br>
+        
+            <p class="index-card-body"> 
+              To establish a one roof platform for clients for all their professional needs with the motive of recognition of CA profession and to serve for nation.
+        </p>
+        </div>
+      </div>
 
+    </div>
+    <div class="col-md-4 col-sm-12 justify-content-center">
+      <div class="card index-card">
+          
+        <div class="card-body" style="padding-bottom:30px">
+          <p class="index-card-heading">Beliefs<span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 172 172"
+            style=" fill:#000000; float:right;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M149.0224,2.6875c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h3.76093l-45.28333,45.4198l-40.17865,-40.17865c-1.6125,-1.6125 -4.16457,-1.6125 -5.6427,0l-44.34375,43.80572c-1.6125,1.6125 -1.6125,4.16458 0,5.6427c0.80625,0.80625 1.88072,1.2099 2.82135,1.2099c1.075,0 2.0151,-0.40365 2.82135,-1.2099l41.5224,-40.98437l40.17865,40.17865c1.6125,1.6125 4.16457,1.6125 5.6427,0l48.24115,-48.24115v3.76355c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-13.4375c0,-1.6125 -0.94115,-3.09167 -2.55365,-3.76355c-0.40312,-0.13438 -0.9401,-0.2677 -1.4776,-0.2677h-0.13385zM137.0625,68.53125c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125v94.0625c0,2.28438 1.74687,4.03125 4.03125,4.03125h24.1875c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-94.0625c0,-2.28437 -1.74687,-4.03125 -4.03125,-4.03125zM6.5849,72.02447c-2.28437,0 -4.03177,1.88073 -3.8974,4.1651v0.53802c0,2.15 1.88073,3.8974 4.1651,3.8974c2.28437,0 4.03177,-1.88072 3.8974,-4.1651v-0.53803c0,-2.28437 -1.88073,-3.8974 -4.1651,-3.8974zM51.0625,81.96875c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125v80.625c0,2.28438 1.74687,4.03125 4.03125,4.03125h24.1875c2.28437,0 4.03125,-1.74687 4.03125,-4.03125v-80.625c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM55.09375,90.03125h16.125v72.5625h-16.125zM94.0625,108.84375c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125v53.75c0,2.28438 1.74688,4.03125 4.03125,4.03125h24.1875c2.28437,0 4.03125,-1.74687 4.03125,-4.03125v-53.75c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM98.09375,116.90625h16.125v45.6875h-16.125zM8.0625,122.28125c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125v40.3125c0,2.28438 1.74688,4.03125 4.03125,4.03125h24.1875c2.28437,0 4.03125,-1.74687 4.03125,-4.03125v-40.3125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM12.09375,130.34375h16.125v32.25h-16.125z"></path></g></g></svg></p></span>
+          </p>
+          <br>
+          <br>
+        
+            <p class="index-card-body">
+              We believe in moral values and accept that there is no shortcut of quality professional services.
+              
+        </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
 <div class="container-fluid section-testimonial justify-content-center">
   <div class="row pb-5">
     <div class="col-12">
-      <h2 class="heading-h2" style="color: white;">Testimonials</h2>
+      <h2 class="heading-h2">Testimonials</h2>
       <h5 class="heading-h5">See what people are saying...</h5>
 
 
@@ -211,26 +260,24 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
   </div>
   <div class="row">
-    <div class="col-md-4">
-
-    </div>
-  <div class="col-md-4 col-sm-12 quote-slider justify-content-center mb-5">
-    <div class="carousel slide" data-ride="carousel" id="myslider" data-interval="4000">
+    
+  <div class="col-12 quote-slider justify-content-center">
+    <div class="carousel slide" data-ride="carousel" id="mytesti" data-interval="3000">
      
       <div class="carousel-inner">
           
-        <div class="carousel-item active block-content quote-slider">
-          <div class="card mx-sm-1  card-shadow  justify-content-center" style="border-color: white; background-color: white;">
+        <div class="carousel-item active">
+          <div class="card testimonial-card testimonial-card-shadow">
           
         
-            <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>
+            <div class="card-body"><h4><b>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="40" height="40"
               viewBox="0 0 172 172"
-              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#162053"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
                        
 
-            </b></h4></div>
+            </b></h4>
             <div class="text-center px-3 pb-3 testimonial-font">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
 
@@ -240,23 +287,25 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <p><i>-Miss Manali Shah</i></p>
             
             </div>
+          </div>
+          
         </div>
          
          
 
         </div>
-        <div class="carousel-item block-content quote-slider">
-          <div class="card mx-sm-1  card-shadow  justify-content-center" style="border-color: white; background-color: white;">
+        <div class="carousel-item">
+          <div class="card testimonial-card testimonial-card-shadow">
           
         
-            <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>
+            <div class="card-body"><h4><b>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="40" height="40"
               viewBox="0 0 172 172"
-              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#162053"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
                        
 
-            </b></h4></div>
+            </b></h4>
             <div class="text-center px-3 pb-3 testimonial-font">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
 
@@ -266,20 +315,25 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <p><i>-Miss Manali Shah</i></p>
             
             </div>
+          </div>
+          
         </div>
+         
+         
+
         </div>
-        <div class="carousel-item block-content quote-slider">
-          <div class="card mx-sm-1  card-shadow  justify-content-center" style="border-color: white; background-color: white;">
+        <div class="carousel-item">
+          <div class="card testimonial-card testimonial-card-shadow">
           
         
-            <div class="text-center mt-3" style="color: #2fb5ab;"><h4><b>
+            <div class="card-body"><h4><b>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="40" height="40"
               viewBox="0 0 172 172"
-              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2aa198"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#162053"><path d="M154.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path><path d="M68.05108,32.71942v0c0,1.64475 -1.00333,3.1605 -2.55133,3.71233c-13.115,4.67625 -33.24975,21.87267 -33.24975,49.56825c0,4.75867 0.81342,7.16667 2.65167,7.16667c2.15358,0 5.5685,-3.58333 15.265,-3.58333c11.78558,0 25.08333,9.3955 25.08333,25.29475c0,13.91408 -10.43467,28.45525 -28.66667,28.45525c-14.81708,0 -35.83333,-11.04742 -35.83333,-43.33325c0,-44.71283 33.67258,-63.69017 51.71467,-70.98942c2.66242,-1.075 5.58642,0.83492 5.58642,3.70875z"></path></g></g></svg>
                        
 
-            </b></h4></div>
+            </b></h4>
             <div class="text-center px-3 pb-3 testimonial-font">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
 
@@ -289,16 +343,17 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <p><i>-Miss Manali Shah</i></p>
             
             </div>
+          </div>
+          
         </div>
+         
+         
 
-                 </div>
-      </div>
+        </div>      </div>
       
     </div>
   </div>
-  <div class="col-md-4">
-
-  </div>
+ 
   </div>
 
 </div>
@@ -319,6 +374,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
       <div class="col-md-4 col-sm-12">
         <p class="footer-content">NEON MITESH</p>
+        
         <p class="footer-main-content">14, First floor, Saraswati Bhuvan, Behind Bhoomi Saraswati Bldg.,
           Chamunda circle, Opp. Axis Bank, Borivali (West), Mumbai - 400092</p>
       </div>

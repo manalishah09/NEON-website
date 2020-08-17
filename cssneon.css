@@ -1,5 +1,5 @@
 body{
-    font-family: 'Open Sans', sans-serif !important;
+    /* font-family: 'Hind', sans-serif !important; */
     line-height: 1.42857143;
     /* color: black; */
     }
@@ -7,6 +7,8 @@ body{
       color: black;
       font-weight: 500;
       margin-left: 10px;
+      font-size: 18px;
+      font-weight: 500;
 
 
     }
@@ -24,11 +26,14 @@ body{
       font-weight: 400;
       color: white;
       font-size: small;
+      font-family: Arial, Helvetica, sans-serif;
     }
     .footer-main-content{
       text-align: left;
       color: whitesmoke;
       font-size: smaller;
+      font-family: Arial, Helvetica, sans-serif;
+
 
     }
     .centered{
@@ -41,7 +46,7 @@ body{
     }
     a:hover{
         text-decoration: none;
-        color:blue;
+        color:#2aa198;
     }
     .line{
         
@@ -51,11 +56,7 @@ body{
        
     }
     @media only screen and (max-width: 600px) {
-        .aboutimg{
-            width: 100% !important;
-            margin-left: 0px;
-            
-        }
+       
         .about-body{
           margin: 10px !important;
 
@@ -67,18 +68,19 @@ body{
         }
     }
     .about-body{
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         color: #747474;
-        font-family: "Open Sans",sans-serif;
+        font-family: 'Hind', sans-serif;
         font-weight: 100;
     }
     .heading-h2{
       text-align: center; 
       margin-top: 50px;
-       color: #073642; 
+       color: #162053; 
        font-weight: 600;
-       font-family: Georgia, serif;      
+       font-family: 'Poppins',sans-serif !important; 
+       font-size:40px     
     }
     
     @media only screen and (max-width: 600px){
@@ -113,10 +115,10 @@ body{
     }
     .size{
       
-      font-size: 14px;
+      font-size: 16px;
       text-align: justify;
       color: #747474;
-      font-family: "Open Sans",sans-serif;
+      font-family: 'Hind',sans-serif;
       font-weight: 100;
     }
     hr{
@@ -169,12 +171,6 @@ body{
   }
   .quote-slider{
     text-align: center !important;
-    
-    
-    align-self: center;
-   
-   
-
   }
   .slider{
     height:600px;
@@ -190,6 +186,16 @@ body{
           box-shadow: none!important;
           margin-bottom: 10px !important;
           
+      }
+      .index-card-body{
+        padding:0px;
+      }
+      .service-card-second{
+        margin: 0px !important;
+        margin-top:10px !important;
+      }
+      .slider{
+        height: 400px;
       }
       .read{
       margin-left: 90px !important;  
@@ -209,17 +215,25 @@ body{
       .content-collapse{
         margin-left: 0px !important;
       }
+      .card-body{
+        font-size:16px
+      }
+      .testimonial-card{
+        width: 100%;
+        margin:0px 0px 20px 0px !important;
+       }
   }
   .heading-h5{
     text-align: center !important;
-    color: white;
-
+    color: black;
+    font-size: 20px;
   }
   .para{
     margin-top: 10px;
     color: white;
     text-decoration: bold;
-    font-size: medium;
+    font-size: 16px !important;
+    font-family: 'Hind',sans-serif;
   }
   .hover-zoom:hover{
     -ms-transform: scale(1.1); /* IE 9 */
@@ -232,10 +246,10 @@ body{
 
   .section-testimonial{
     color: #000;
-    overflow-x: hidden;
     height: 100%;
-    background-image: linear-gradient(280deg, #007991, #78ffd6);
-    background-repeat: no-repeat
+    background-image: linear-gradient(135deg,#E8E8E8 50%,#2aa198 50%) !important;
+    background-color: white;
+    background-repeat: no-repeat;
 }
 .read{
   height: 30px !important;
@@ -245,15 +259,15 @@ body{
 .testimonial-font{
   text-align: center; 
   color: black; 
-  font-size: small;
-  font-family: Georgia, serif;      
-
+  font-size: 16px;
+  font-family: 'Hind', sans-serif;
+  
 }
 .know-us{
-  background-image: linear-gradient(240deg, #00a4c4, #ffffff, #ffffff 130%);
+  /* background-image: linear-gradient(240deg, #00a4c4, #ffffff, #ffffff 130%); */
   background-repeat: no-repeat;
   line-height: 1.4;
-
+  background-color: #fff;
 }
 .about-us{
   background-image: linear-gradient(360deg,#ffffff,#ffffff, #ffffff);
@@ -262,10 +276,10 @@ body{
 
 .contact-content{
   margin: 10px 30px 30px 30px;
-  font-size: 14px;
+  font-size: 16px;
         text-align: center;
-        color: #747474;
-        font-family: "Open Sans",sans-serif;
+        color: #222222;
+        font-family:'Hind',sans-serif;
         font-weight: 500 !important;
 
 }
@@ -284,12 +298,13 @@ body{
 
 }
 .ql-card{
-  border: none;
+  border-bottom:1px solid;
   font-size: 20px;
-  height: 40px;
+  /* height: 40px; */
   margin-right:50px;
   margin-left: 50px;
   margin-top: 10px;
+
  
 }
 .content-collapse{
@@ -330,3 +345,112 @@ body{
     border-color:#2fb5ab;
     
 }
+thead{
+  text-align: center;
+  font-size: 18px;
+  background-color: #2aa198;
+  height: 20px;
+  color: white;
+}
+tbody{
+  text-align: center;
+  font-size: 16px;
+}
+.sub-head{
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 550;
+  color: #000;
+
+
+}
+.index-card{
+  border: none;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-left:40px ;
+  padding-right:20px ;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  padding-bottom:40px ;
+  color: black;
+  text-align: left;
+}
+.index-card:hover{
+  background-color:#2aa198;
+  margin-top: -30px;
+  color: white;
+  padding-top: 20px ;
+}
+ 
+
+.index-card-heading{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.index-card-body{
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  
+
+}
+.testimonial-card{
+  background-color: white;
+  border: none;
+  margin:0px 300px 100px 300px;
+}
+.card{
+  border: none;
+}
+.testimonial-card-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.452), 0 6px 20px 0 rgba(0, 0, 0, 0.452); 
+
+}
+.service-card{
+  border: none;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-left:40px ;
+  padding-right:20px ;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  padding-bottom:40px ;
+  color: black;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.service-card:hover{
+  background-color:#162053;
+  
+  color: white;
+  padding-top: 20px ;
+}
+.service-card-second{
+  border: none;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-left:40px ;
+  padding-right:20px ;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  padding-bottom:40px ;
+  color: black;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+.service-card-second:hover{
+  background-color:#162053;
+  color: white;
+  padding-top: 20px ;
+
+}
+
+.service-card-heading{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+ 
+}
+
