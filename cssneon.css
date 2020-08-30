@@ -193,6 +193,10 @@ body{
       .service-card-second{
         margin: 0px !important;
         margin-top:10px !important;
+        height:600px !important;
+      }
+      .service-card{
+        height: 600px !important;
       }
       .slider{
         height: 400px;
@@ -210,18 +214,19 @@ body{
         margin-left: 0px !important;
       }
       .icons-dropdown{
-        /* padding-left: 10px !important; */
+        float:right;
       }
       .content-collapse{
         margin-left: 0px !important;
       }
-      .card-body{
-        font-size:16px
-      }
+      
       .testimonial-card{
         width: 100%;
         margin:0px 0px 20px 0px !important;
        }
+  }
+  .icons-dropdown{
+    float:right;
   }
   .heading-h5{
     text-align: center !important;
@@ -239,6 +244,12 @@ body{
     -ms-transform: scale(1.1); /* IE 9 */
    -webkit-transform: scale(1.1); /* Safari 3-8 */
    transform: scale(1.1); 
+  }
+  .ql-card-body{
+    font-size: 16px;
+    color: #222222;
+    padding:12px;
+
   }
 
 
@@ -291,21 +302,21 @@ body{
   font-weight: 100;
 
 } */
-.card-body{
-  border: none;
-  padding: 5px;
-  font-family: "Open Sans",sans-serif;
 
-}
 .ql-card{
-  border-bottom:1px solid;
+  border-bottom:1px solid#C0C0C0		 !important;
   font-size: 20px;
   /* height: 40px; */
   margin-right:50px;
   margin-left: 50px;
   margin-top: 10px;
+ 
+  color: #222222;
 
  
+}
+.ql-card:hover{
+  border-left:3px solid #2aa198 !important;
 }
 .content-collapse{
   margin-left:55px;
@@ -315,6 +326,8 @@ body{
   color: #747474;
   font-family: "Open Sans",sans-serif;
   font-weight: 100;
+  padding-bottom: 10px;
+ 
 }
 .tabs-change{
   font-size: 17px;
@@ -375,11 +388,12 @@ tbody{
   padding-bottom:40px ;
   color: black;
   text-align: left;
+  height: 300px;
 }
 .index-card:hover{
   background-color:#2aa198;
   margin-top: -30px;
-  color: white;
+  color: #ffffff !important;
   padding-top: 20px ;
 }
  
@@ -412,37 +426,39 @@ tbody{
   border: none;
   background-color: #ffffff;
   padding-top: 30px;
-  padding-left:40px ;
+  padding-left:10px ;
   padding-right:20px ;
   margin-bottom: 30px;
   margin-top: -15px;
-  padding-bottom:40px ;
+  padding-bottom:10px ;
   color: black;
   text-align: left;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 420px;
+}
 .service-card:hover{
   background-color:#162053;
-  
-  color: white;
+  color: white !important;
   padding-top: 20px ;
 }
 .service-card-second{
   border: none;
   background-color: #ffffff;
   padding-top: 30px;
-  padding-left:40px ;
-  padding-right:20px ;
+  padding-left:10px ;
+  padding-right:10px ;
   margin-bottom: 30px;
   margin-top: -15px;
   padding-bottom:40px ;
   color: black;
   text-align: left;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 420px;
  
 }
 .service-card-second:hover{
   background-color:#162053;
-  color: white;
+  color: white !important;
   padding-top: 20px ;
 
 }

@@ -16,11 +16,27 @@
   
 <style>
   a:hover{
-    color: blue;
+    color: cornflowerblue;
   }
 a{
   text-decoration: none;
 }
+body{
+  font-family: 'Hind',sans-serif;
+}
+.nav{
+  background-color: white;
+  font-size: 16px;
+}
+.tab-link{
+  font-size:17px;
+  font-weight: 550;
+}
+.tab-link:hover{
+  color:#2aa198;
+  border: none;
+}
+
 </style>
  
 </head>
@@ -50,7 +66,7 @@ a{
         <li class="nav-item">
           <a class="nav-link" href="services.html">Services</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a class="nav-link" href="links.html">
             Knowledge Bank
           </a>
@@ -70,23 +86,24 @@ a{
         <img src="cover.jpg" style="width: 100%; height: 400px; background-size: cover;
         background-position: center !important; background-attachment: fixed; opacity: 0.5; color: white; background-color: white;object-fit: cover;">
         <div class="centered">
-          <h1 class="breadcrumbs">About Us</h1>
-          <p class="breadcrubs">  <a href="index.html">Home</a> / Services</p>
+          <h1 class="breadcrumbs">Knowledge Bank</h1>
+          <p class="breadcrubs">  <a href="index.html">Home</a> / Knowledge Bank</p>
         
         </div>
-      <div class="container-fluid" style="background-color: #ffffff;">
-        <ul class="nav nav-tabs pt-5 tabs-change">
+        
+      <div class="container-fluid" style="background-color: #ffffff; padding-bottom: 50px;">
+        <ul class="nav nav-tabs tabs-change pt-5">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#quick">Quick Links</a>
+              <a class="nav-link active tab-link" data-toggle="tab" href="#quick">Quick Links</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#imp">Important Links</a>
+              <a class="nav-link tab-link" data-toggle="tab" href="#imp">Important Links</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#gstlinks">GST Links</a>
+              <a class="nav-link tab-link" data-toggle="tab" href="#gstlinks">GST Links</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#eodb">Ease of Doing Business</a>
+              <a class="nav-link tab-link" data-toggle="tab" href="#eodb">Ease of Doing Business</a>
             </li>
           </ul>
         
@@ -95,7 +112,7 @@ a{
             <div class="tab-pane fade active show" id="quick">
                 <div id="accordion">
                     <div class="card text-white ql-card" data-toggle="collapse" data-target="#demo">
-                        <div class="card-body">
+                        <div class="card-body ql-card-body">
                             Income Tax
                             <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
@@ -103,26 +120,26 @@ a{
                       </div>
                       <div id="demo" class="collapse content-collapse" data-parent="#accordion">
                         
-                        <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank">E-payment of Taxes</a><br>
-                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Income Tax Assessee Login</a><br>
-                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Verify PAN (from Name & DOB)</a><br>
-                        <a href="https://tin.tin.nsdl.com/oltas/refundstatuslogin.html" target="_blank">Status of Tax Refund</a><br>
-                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">ITR-V Receipt Status</a><br>
-                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Know Your AO</a><br>
-                        <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">Online New PAN Application/ Correction of PAN</a><br>
-                        <a href="https://www.tdscpc.gov.in/app/login.xhtml" target="_blank">TAN Login</a><br>
-                        <a href="https://tin.tin.nsdl.com/oltas/index.html" target="_blank">OLTAS Challan Status</a><br>
-                        <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16A/LinkToUnauthorizedView.jsp" target="_blank">Verify Form 16A</a><br>
-                        <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16/LinkToUnauthorizedView.jsp" target="_blank">Verify Form 16</a><br>
-                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Know TAN</a><br>
-                        <a href="https://tin.tin.nsdl.com/tan/form49B.html" target="_blank">Online TAN Application</a><br>
-                        <a href="https://tin.tin.nsdl.com/tan/ChangeRequest.html" target="_blank">Online TAN Correction</a>
+                        <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank">- E-payment of Taxes</a><br>
+                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Income Tax Assessee Login</a><br>
+                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Verify PAN (from Name & DOB)</a><br>
+                        <a href="https://tin.tin.nsdl.com/oltas/refundstatuslogin.html" target="_blank">- Status of Tax Refund</a><br>
+                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- ITR-V Receipt Status</a><br>
+                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Know Your AO</a><br>
+                        <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">- Online New PAN Application/ Correction of PAN</a><br>
+                        <a href="https://www.tdscpc.gov.in/app/login.xhtml" target="_blank">- TAN Login</a><br>
+                        <a href="https://tin.tin.nsdl.com/oltas/index.html" target="_blank">- OLTAS Challan Status</a><br>
+                        <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16A/LinkToUnauthorizedView.jsp" target="_blank">- Verify Form 16A</a><br>
+                        <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16/LinkToUnauthorizedView.jsp" target="_blank">- Verify Form 16</a><br>
+                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Know TAN</a><br>
+                        <a href="https://tin.tin.nsdl.com/tan/form49B.html" target="_blank">- Online TAN Application</a><br>
+                        <a href="https://tin.tin.nsdl.com/tan/ChangeRequest.html" target="_blank">- Online TAN Correction</a>
                         
                     </div>
                 
                     
-                <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#service">
-                        <div class="card-body">
+                <div class="card text-white ql-card" data-toggle="collapse" data-target="#service">
+                        <div class="card-body  ql-card-body">
                             Service Tax / Excise
                             <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
     
@@ -130,15 +147,15 @@ a{
                       </div>
                       <div id="service" class="collapse content-collapse" data-parent="#accordion">
                         
-                        <a href="https://cbec-easiest.gov.in/EST/InputPageForEPaymentServlet" target="_blank">E-payment of Service Tax / Excise</a><br>
-                        <a href="https://onlineservices.cbec-easiest.gov.in/csi/" target="_blank">Know Challan status</a><br>
-                        <a href="https://cbec-easiest.gov.in/EST/AssesseeVerification.do" target="_blank">Assessee Search (Code based)</a><br>
-                        <a href="https://www.aces.gov.in/STASE/switch.do?prefix=/ui/jsp/common&page=/loginpage.do" target="_blank">Assessee Login</a><br>
+                        <a href="https://cbec-easiest.gov.in/EST/InputPageForEPaymentServlet" target="_blank">- E-payment of Service Tax / Excise</a><br>
+                        <a href="https://onlineservices.cbec-easiest.gov.in/csi/" target="_blank">- Know Challan status</a><br>
+                        <a href="https://cbec-easiest.gov.in/EST/AssesseeVerification.do" target="_blank">- Assessee Search (Code based)</a><br>
+                        <a href="https://www.aces.gov.in/STASE/switch.do?prefix=/ui/jsp/common&page=/loginpage.do" target="_blank">- Assessee Login</a><br>
                         
                     </div>
                     
-                    <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#state">
-                        <div class="card-body">
+                    <div class="card text-white ql-card" data-toggle="collapse" data-target="#state">
+                        <div class="card-body ql-card-body">
                             Employees' State Insurance
                             <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
     
@@ -146,18 +163,18 @@ a{
                       </div>
                       <div id="state" class="collapse content-collapse" data-parent="#accordion">
                         
-                        <a href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx" target="_blank">Employer Login</a><br>
+                        <a href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx" target="_blank">- Employer Login</a><br>
                        
                     </div>
                   
 
                     <div id="state" class="collapse content-collapse" data-parent="#accordion">
                         
-                      <a href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx" target="_blank">Employer Login</a><br>
+                      <a href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx" target="_blank">- Employer Login</a><br>
                      
                   </div>
-                  <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#ppf">
-                      <div class="card-body">
+                  <div class="card text-white ql-card" data-toggle="collapse" data-target="#ppf">
+                      <div class="card-body  ql-card-body">
                           Provident Fund
                           <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
   
@@ -165,16 +182,16 @@ a{
                     </div>
                     <div id="ppf" class="collapse content-collapse" data-parent="#accordion">
                       
-                      <a href="https://unifiedportal-emp.epfindia.gov.in/epfo/?accesscheck=%2Femployer_home.php" target="_blank">Employer Login</a><br>
-                      <a href="https://www.epfindia.gov.in/site_en/KYCS.php" target="_blank">Know PF Claim Status</a><br>
-                      <a href="https://passbook.epfindia.gov.in/MemberPassBook/Login" target="_blank">Know PF Balance</a><br>
-                      <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank">Employee Registration</a><br>
-                      <a href="https://pensionersportal.gov.in/" target="_blank">Pensioners' Portal</a><br>
+                      <a href="https://unifiedportal-emp.epfindia.gov.in/epfo/?accesscheck=%2Femployer_home.php" target="_blank">- Employer Login</a><br>
+                      <a href="https://www.epfindia.gov.in/site_en/KYCS.php" target="_blank">- Know PF Claim Status</a><br>
+                      <a href="https://passbook.epfindia.gov.in/MemberPassBook/Login" target="_blank">- Know PF Balance</a><br>
+                      <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank">- Employee Registration</a><br>
+                      <a href="https://pensionersportal.gov.in/" target="_blank">- Pensioners' Portal</a><br>
 
                   </div>
                  
-                <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#icsi">
-                    <div class="card-body">
+                <div class="card text-white ql-card" data-toggle="collapse" data-target="#icsi">
+                    <div class="card-body ql-card-body">
                         ICSI
                         <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
@@ -183,12 +200,12 @@ a{
                   <div id="icsi" class="collapse content-collapse" data-parent="#accordion">
                     
                     <a href="https://www.icsi.in/student/Login.aspx" target="_blank">
-                      Member/ Student Login</a><br>
-                    <a href="https://www.icsi.in/student/Members/MemberSearch.aspx" target="_blank">Search CS from Membership No.</a><br>
+                      - Member/ Student Login</a><br>
+                    <a href="https://www.icsi.in/student/Members/MemberSearch.aspx" target="_blank">- Search CS from Membership No.</a><br>
                     
                 </div>
-                <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#icai">
-                  <div class="card-body">
+                <div class="card text-white ql-card" data-toggle="collapse" data-target="#icai">
+                  <div class="card-body  ql-card-body">
                       ICAI
                       <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
@@ -197,21 +214,21 @@ a{
                 <div id="icai" class="collapse content-collapse" data-parent="#accordion">
                   
                   <a href="https://www.cpeicai.org/" target="_blank">
-                    View CPE Hours</a><br>
+                    - View CPE Hours</a><br>
 
-                  <a href="https://www.icai.org/new_post.html?post_id=12517" target="_blank">Pay Membership Fee Online
+                  <a href="https://www.icai.org/new_post.html?post_id=12517" target="_blank">- Pay Membership Fee Online
                   </a><br>
-                  <a href="https://www.icai.org/new_category.html?c_id=80" target="_blank">Search CA from Membership No
+                  <a href="https://www.icai.org/new_category.html?c_id=80" target="_blank">- Search CA from Membership No
 
                   </a><br>
-                  <a href="https://www.icai.org/new_post.html?post_id=4778" target="_blank">Download Firm Constitution Certificate
+                  <a href="https://www.icai.org/new_post.html?post_id=4778" target="_blank">- Download Firm Constitution Certificate
 
                   </a><br>
                   
               </div>
 
-              <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#icwai">
-                <div class="card-body">
+              <div class="card text-white ql-card" data-toggle="collapse" data-target="#icwai">
+                <div class="card-body  ql-card-body">
                     ICAI (ICWAI)
                     <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
@@ -220,16 +237,16 @@ a{
               <div id="icwai" class="collapse content-collapse" data-parent="#accordion">
                 
               <a href="https://cmaicmai.in/MMS/Login.aspx?mode=EU" target="_blank">
-                  Member Login
+                - Member Login
                 </a><br>
-                <a href="https://eicmai.in/External/Utility/GeneralSearch/Member/General_Search.aspx" target="_blank">Search Member from Membership No.
+                <a href="https://eicmai.in/External/Utility/GeneralSearch/Member/General_Search.aspx" target="_blank">- Search Member from Membership No.
 
                 </a><br>
                 
             </div>
           
-          <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#pr">
-            <div class="card-body">
+          <div class="card text-white ql-card" data-toggle="collapse" data-target="#pr">
+            <div class="card-body  ql-card-body">
                 Property Registration
                 <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
@@ -239,21 +256,21 @@ a{
             
           <a href="https://www.shcilestamp.com/eStampIndia/VerifyCertificate.es?rDoAction=VerifyCert" target="_blank">
               
-          E-Stamping - Verify Certificate
+            - E-Stamping - Verify Certificate
             </a><br>
-            <a href="https://doris.delhigovt.nic.in/" target="_blank">Property Registration (Delhi).
+            <a href="https://doris.delhigovt.nic.in/" target="_blank">- Property Registration (Delhi).
 
             </a><br>
-            <a href="https://srams.delhi.gov.in/" target="_blank">Appointment for Property Registration (Delhi)
+            <a href="https://srams.delhi.gov.in/" target="_blank">- Appointment for Property Registration (Delhi)
 
             </a><br>
-            <a href="https://efilingigr.maharashtra.gov.in/ereg/" target="_blank">Property Registration (Maharastra & Pune)
+            <a href="https://efilingigr.maharashtra.gov.in/ereg/" target="_blank">- Property Registration (Maharastra & Pune)
 
             </a><br>
             
         </div>
         <div class="card text-white ql-card" data-toggle="collapse" data-target="#others">
-          <div class="card-body">
+          <div class="card-body  ql-card-body">
               Others
               <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
@@ -263,32 +280,32 @@ a{
           
 
         <a href="http://indiancourts.nic.in/" target="_blank">
-            Indian Courts
+          - Indian Courts
           </a><br>
           <a href="http://www.labourcis.nic.in/" target="_blank">
-            Online Registration Delhi Shops & Establishments
+            - Online Registration Delhi Shops & Establishments
 
           </a><br>
           <a href="http://esla.delhi.gov.in/" target="_blank">
-            E-SLA of Delhi Government
+            - E-SLA of Delhi Government
 
           </a><br>
           <a href="https://eaadhaar.uidai.gov.in/" target="_blank">
-            Download Aadhar
+            - Download Aadhar
           </a><br>
           <a href="https://copyright.gov.in/UserRegistration/frmLoginPage.aspx" target="_blank">
-            E-filing of Copyright Apllication
+            - E-filing of Copyright Apllication
 
           </a><br>
           <a href="https://www.rtionline.gov.in/" target="_blank">
-            File online RTI Application
+            - File online RTI Application
           </a><br>
          
           <a href="http://www.delhipolice.nic.in/parivartan/submitonline.htm" target="_blank">
-            Online Complaint to Delhi Police
+            - Online Complaint to Delhi Police
           </a><br>
           <a href="https://www.gst.gov.in/" target="_blank">
-            GST
+            - GST
           </a><br>
           
       </div>
@@ -302,273 +319,273 @@ a{
         </div>
        
           <div class="tab-pane fade" id="imp">
-              <div id="accordion">
+              <div id="accordion1">
 
   <div class="card  text-white ql-card" data-toggle="collapse" data-target="#imp1">
-          <div class="card-body">
+          <div class="card-body  ql-card-body">
             Professional Institutions/Bodies
               <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
           </div>
         </div>
-        <div id="imp1" class="collapse content-collapse" data-parent="#accordion">
+        <div id="imp1" class="collapse content-collapse" data-parent="#accordion1">
           
         <a href="https://www.icai.org/" target="_blank">
-          Institute of Chartered Accountants of India  (ICAI
+          - Institute of Chartered Accountants of India  (ICAI
 
           </a><br>
           <a href="http://nirc-icai.org/" target="_blank">
-            Northern India Regional Council of ICAI (NIRC)
+            - Northern India Regional Council of ICAI (NIRC)
 
           </a><br>
           <a href="http://www.circ-icai.org/" target="_blank">
-            Central India Regional Council of ICAI (CIRC)
+            - Central India Regional Council of ICAI (CIRC)
 
           </a><br>
           <a href="https://eirc-icai.org/" target="_blank">
-            Eastern India Regional Council of ICAI (EIRC)
+            - Eastern India Regional Council of ICAI (EIRC)
 
           </a><br>
           <a href="https://www.sirc-icai.org/" target="_blank">
-            Southern India Regional Council of ICAI (SIRC)
+            - Southern India Regional Council of ICAI (SIRC)
 
           </a><br>
           <a href="https://www.wirc-icai.org/" target="_blank">
-            Western India Regional Council of ICAI (WIRC)
+            - Western India Regional Council of ICAI (WIRC)
 
           </a><br>
           <a href="https://www.icsi.edu/home/" target="_blank">
-            Institute of Company Secretaries of India
+            - Institute of Company Secretaries of India
 
           </a><br>
           <a href="https://www.icsi.edu/home/" target="_blank">
-            Northern India Regional Council of ICSI (NIRC)
+            - Northern India Regional Council of ICSI (NIRC)
 
           </a><br>
           <a href="https://www.icsi.edu/home/" target="_blank">
-            Western India Regional Council of ICSI (WIRC)
+            - Western India Regional Council of ICSI (WIRC)
 
           </a><br>
           <a href="https://icmai.in/" target="_blank">
-            Institute of Cost Accountants of India
+            - Institute of Cost Accountants of India
 
 
           </a><br>
           <a href="http://www.bcasonline.org/" target="_blank">
-            Bombay Chartered Accountants Society
+            - Bombay Chartered Accountants Society
 
           </a><br>
           <a href="http://www.ficci.com/" target="_blank">
-            Federation of Indian Chambers of Commerce and Industry
+            - Federation of Indian Chambers of Commerce and Industry
 
           </a><br>
           <a href="http://www.isaca.org/" target="_blank">
-            The Information System Audit and Control Association & Foundation (ISACA)
+            - The Information System Audit and Control Association & Foundation (ISACA)
 
           </a><br>
         
           
       </div>
       <div class="card  text-white ql-card" data-toggle="collapse" data-target="#imp2">
-        <div class="card-body">
+        <div class="card-body  ql-card-body">
           Public Financial Institutions
             <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
         </div>
       </div>
-      <div id="imp2" class="collapse content-collapse" data-parent="#accordion">
+      <div id="imp2" class="collapse content-collapse" data-parent="#accordion1">
         <a href="http://www.idbi.com/" target="_blank">
-          Industrial Development Bank of India (IDBI)
+          - Industrial Development Bank of India (IDBI)
 
         </a><br>
         <a href="http://www.ifciltd.com/" target="_blank">
-          Industrial Finance Corporation of India (IFCI)
+          - Industrial Finance Corporation of India (IFCI)
 
         </a><br>
         <a href="http://www.iibiltd.com/" target="_blank">
-          Industrial Investment Bank of India (IIBI)
+          - Industrial Investment Bank of India (IIBI)
 
         </a><br>
         <a href="http://www.licindia.com/" target="_blank">
-          Life Insurance Corporation of India (LIC)
+          - Life Insurance Corporation of India (LIC)
 
         </a><br>
         <a href="http://www.utimf.com/" target="_blank">
-          Unit Trust of India (UTI)
+          - Unit Trust of India (UTI)
 
         </a><br>
         <a href="http://www.eximbankindia.in/" target="_blank">
-          Export Import Bank of India (Exim Bank)
+          - Export Import Bank of India (Exim Bank)
 
         </a><br>
         <a href="https://www.hdfc.com/" target="_blank">
-          Housing Development Finance Corporation Ltd. (HDFC)
+          - Housing Development Finance Corporation Ltd. (HDFC)
 
         </a><br>
         <a href="http://www.nabard.org/" target="_blank">
-          National Bank for Agricultural & Rural Development (NABARD)
+          - National Bank for Agricultural & Rural Development (NABARD)
 
         </a><br>
         <a href="http://hudco.org/" target="_blank">
-          Housing & Urban Development Corporation (HUDCO
+          - Housing & Urban Development Corporation (HUDCO
 
         </a><br>
         <a href="http://www.sidbi.com/" target="_blank">
-          Small Industries Development Bank of India (SIDBI)
+          - Small Industries Development Bank of India (SIDBI)
 
         </a><br>
         </div>
-        <div class="card   text-white ql-card" data-toggle="collapse" data-target="#imp3">
-          <div class="card-body">
+        <div class="card text-white ql-card" data-toggle="collapse" data-target="#imp3">
+          <div class="card-body  ql-card-body">
             Indian Ministries, Government Departments & Other Statutory Bodies
               <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
   
           </div>
         </div>
-        <div id="imp3" class="collapse content-collapse" data-parent="#accordion">
+        <div id="imp3" class="collapse content-collapse" data-parent="#accordion1">
           <a href="" target="_blank">
-            Ministry of Finance
+            - Ministry of Finance
 
   
           </a><br>
           <a href="https://www.finmin.nic.in/" target="_blank">
-            Ministry of Information Technology
+            - Ministry of Information Technology
 
   
           </a><br>
           <a href="https://www.meity.gov.in/" target="_blank">
-            Ministry of Law & Justice
+            - Ministry of Law & Justice
 
   
           </a><br>
           <a href="https://www.mha.gov.in/" target="_blank">
-            Ministry of Home Affairs
+            - Ministry of Home Affairs
 
   
           </a><br>
           <a href="https://incometaxindia.gov.in/Pages/default.aspx" target="_blank">
             
-            Central Board of Direct Taxes
+            - Central Board of Direct Taxes
 
           </a><br>
           <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">
             
-            Department of Company Affairs(MCA21)
+            - Department of Company Affairs(MCA21)
 
           </a><br>
           <a href="https://www.cbec.gov.in/" target="_blank">
             
-            Central Board of Excise & Custom
+            - Central Board of Excise & Custom
 
           </a><br>
           <a href="http://www.bifr.nic.in/" target="_blank">
-            Board of Industrial & Financial Reconstruction (BIFR)
+            - Board of Industrial & Financial Reconstruction (BIFR)
 
   
           </a><br>
           <a href="http://www.cestatnew.gov.in/" target="_blank">
             
-            Customs, Excise and Service Tax Appellate Tribunal
+            - Customs, Excise and Service Tax Appellate Tribunal
 
           </a><br>
           <a href="https://www.rbi.org.in/" target="_blank">
             
-            Reserve Bank of India (RBI)
+            - Reserve Bank of India (RBI)
 
           </a><br>
           <a href="https://www.sebi.gov.in/" target="_blank">
-            Securities & Exchange Board of India (SEBI)
+            - Securities & Exchange Board of India (SEBI)
 
   
           </a><br>
           <a href="https://www.nseindia.com/" target="_blank">
             
-            National Stock Exchange (NSE)
+            - National Stock Exchange (NSE)
 
           </a><br>
           <a href="https://www.bseindia.com/" target="_blank">
             
-            Bombay Stock Exchange (BSE)
+            - Bombay Stock Exchange (BSE)
 
           </a><br>
           <a href="https://www.nsdl.co.in/" target="_blank">
             
-            National Securities Depositories Ltd. (NSDL)
+            - National Securities Depositories Ltd. (NSDL)
 
           </a><br>
           <a href="https://www.cdslindia.com/" target="_blank">
-            Central Depository Services (India) Ltd. (CDSL)
+            - Central Depository Services (India) Ltd. (CDSL)
 
   
           </a><br>
           <a href="http://www.cag.gov.in/" target="_blank">
             
-            Controller & Auditor General of India
+            - Controller & Auditor General of India
 
           </a><br>
           <a href="http://www.cga.nic.in/" target="_blank">
             
-            Controller General of Accounts
+            - Controller General of Accounts
 
           </a><br>
           <a href="https://main.sci.gov.in/" target="_blank">
             
-            Supreme Court of India
+            - Supreme Court of India
 
           </a><br>
           <a href="http://delhihighcourt.nic.in/" target="_blank">
             
-            High Court, Delhi
+            - High Court, Delhi
 
           </a><br>
           <a href="https://bombayhighcourt.nic.in/" target="_blank">
             
-            High Court,Mumbai
+            - High Court,Mumbai
 
           </a><br>
           <a href="http://www.crisil.com/" target="_blank">
             
-            Credit Rating Information Services of India Ltd. (CRISIL)
+            - Credit Rating Information Services of India Ltd. (CRISIL)
 
           </a><br>
           <a href="http://www.icra.in/" target="_blank">
             
-            ICRA Ltd. (ICRA)
+            - ICRA Ltd. (ICRA)
 
           </a><br>
           <a href="https://www.careratings.com/" target="_blank">
-            Credit Analysis & Research Ltd. (CARE)
+            - Credit Analysis & Research Ltd. (CARE)
 
   
           </a><br>
           <a href="http://esic.nic.in/" target="_blank">
-            Employees State Insurance Corporation
+            - Employees State Insurance Corporation
 
   
           </a><br>
           <a href="https://www.epfindia.gov.in/" target="_blank">
             
-            Employee Provident Fund
+            - Employee Provident Fund
 
           </a><br>
           <a href="https://labour.gov.in/" target="_blank">
             
-            Labour Department
+            - Labour Department
 
           </a><br>
           <a href="https://incometaxindiaefiling.gov.in/" target="_blank">
-            Tax E-Filing
+            - Tax E-Filing
 
   
           </a><br>
           <a href="https://www.aces.gov.in/" target="_blank">
             
-            Automation of Central Excise and Service Tax
+            - Automation of Central Excise and Service Tax
 
           </a><br>
           <a href="https://www.aces.gov.in/STASE/switch.do?prefix=/ui/jsp/common&page=/loginpage.do" target="_blank">
             
-            Service Tax E-Payment
+            - Service Tax E-Payment
 
           </a><br>
 
@@ -780,157 +797,158 @@ a{
                 </div>
                 </div>
                 <div class="tab-pane fade" id="eodb">
-                  <div class="accordion">
+                  <div id="accordion2">
                     <div class="card   text-white ql-card" data-toggle="collapse" data-target="#eodb1">
-                      <div class="card-body">
+                      <div class="card-body  ql-card-body">
                           Income Taxation
                           <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
                       </div>
                     </div>
-                    <div id="eodb1" class="collapse content-collapse" data-parent="#accordion">
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Income Tax Return File
+                    <div id="eodb1" class="collapse content-collapse" data-parent="#accordion2">
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Income Tax Return File
                       </a><br>
-                      <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank">Pay Taxes For Income Tax & TDS
+                      <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank">- Pay Taxes For Income Tax & TDS
                       </a><br>
-                      <a href="https://www1.incometaxindiaefiling.gov.in/e-FilingGS/Services/KnowYourPanLinkGS.html?lang=eng" target="_blank">Know Your PAN
+                      <a href="https://www1.incometaxindiaefiling.gov.in/e-FilingGS/Services/KnowYourPanLinkGS.html?lang=eng" target="_blank">- Know Your PAN
                       </a><br>
-                      <a href="https://tin.tin.nsdl.com/oltas/index.html" target="_blank">Challan Status Enquiry
+                      <a href="https://tin.tin.nsdl.com/oltas/index.html" target="_blank">- Challan Status Enquiry
                       </a><br>
-                      <a href="https://tin.tin.nsdl.com/oltas/refundstatuslogin.html" target="_blank">Status Of Refund
+                      <a href="https://tin.tin.nsdl.com/oltas/refundstatuslogin.html" target="_blank">- Status Of Refund
                       </a><br>
-                      <a href="https://www.tin-nsdl.com/forms/tds-linktoUnAuthorizedInput.html" target="_blank">Status Of Quarterly TDS Return
+                      <a href="https://www.tin-nsdl.com/forms/tds-linktoUnAuthorizedInput.html" target="_blank">- Status Of Quarterly TDS Return
                       </a><br>
-                      <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank">E-payment of Taxes
+                      <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank">- E-payment of Taxes
                       </a><br>
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Income Tax Assesse Login
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Income Tax Assesse Login
                       </a><br>
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Verify PAN (from Name & DOB)
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Verify PAN (from Name & DOB)
                       </a><br>
-                      <a href="https://tin.tin.nsdl.com/oltas/refundstatuslogin.html" target="_blank">Status of Tax Refund
+                      <a href="https://tin.tin.nsdl.com/oltas/refundstatuslogin.html" target="_blank"- >Status of Tax Refund
                       </a><br>
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">ITR-V Receipt Status
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- ITR-V Receipt Status
                       </a><br>
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Know Your AO
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Know Your AO
                       </a><br>
-                      <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">Online New PAN Application/ Correction of PAN
+                      <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">- Online New PAN Application/ Correction of PAN
                       </a><br>
-                      <a href="https://www.tdscpc.gov.in/app/login.xhtml" target="_blank">TAN Login
+                      <a href="https://www.tdscpc.gov.in/app/login.xhtml" target="_blank">- TAN Login
                       </a><br>
-                      <a href="https://tin.tin.nsdl.com/oltas/index.html" target="_blank">OLTAS Challan Status
+                      <a href="https://tin.tin.nsdl.com/oltas/index.html" target="_blank">- OLTAS Challan Status
                       </a><br>
-                      <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16A/LinkToUnauthorizedView.jsp" target="_blank">Verify Form 16A
+                      <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16A/LinkToUnauthorizedView.jsp" target="_blank">- Verify Form 16A
                       </a><br>
-                      <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16/LinkToUnauthorizedView.jsp" target="_blank">Verify Form 16
+                      <a href="https://onlineservices.tin.egov-nsdl.com/TIN/JSP/form16/LinkToUnauthorizedView.jsp" target="_blank">- Verify Form 16
                       </a><br>
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Know TAN
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Know TAN
                       </a><br>
-                      <a href="https://tin.tin.nsdl.com/tan/form49B.html" target="_blank">Online TAN Application
+                      <a href="https://tin.tin.nsdl.com/tan/form49B.html" target="_blank">- Online TAN Application
                       </a><br>
-                      <a href="https://tin.tin.nsdl.com/tan/ChangeRequest.html" target="_blank">Online TAN Correction
+                      <a href="https://tin.tin.nsdl.com/tan/ChangeRequest.html" target="_blank">- Online TAN Correction
                       </a><br>
-                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">Tax E-Filing
+                      <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank">- Tax E-Filing
                       </a><br>
 
                       
                   </div>
-                  <div class="card   text-white ql-card" data-toggle="collapse" data-target="#eodb2">
-                    <div class="card-body">
+                  <div class="card text-white ql-card" data-toggle="collapse" data-target="#eodb2">
+                    <div class="card-body  ql-card-body">
                       Corporate Affairs - Ministry of Corporate Affairs
                         <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
                     </div>
                   </div>
-                  <div id="eodb2" class="collapse content-collapse" data-parent="#accordion">
+                  <div id="eodb2" class="collapse content-collapse" data-parent="#accordion2">
 
-                    <a href="https://www1.incometaxindiaefiling.gov.in/e-FilingGS/Services/KnowYourTanLink.html?lang=eng" target="_blank">                    Know Your TAN
+                    <a href="https://www1.incometaxindiaefiling.gov.in/e-FilingGS/Services/KnowYourTanLink.html?lang=eng" target="_blank">                    - Know Your TAN
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Verify Co. Master Data
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Verify Co. Master Data
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    MCA Login
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - MCA Login
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Find CIN
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Find CIN
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Check Co./LLP Name
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Check Co./LLP Name
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    View Public Documents
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - View Public Documents
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Calculate Fee
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Calculate Fee
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Verify DIN-PAN Details of Directors
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Verify DIN-PAN Details of Directors
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Verify Digitally Signed Certificate
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Verify Digitally Signed Certificate
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Track Payment Status
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Track Payment Status
                     </a><br>
-                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    Get Certified copies
+                    <a href="http://www.mca.gov.in/mcafoportal/login.do" target="_blank">                    - Get Certified copies
                     </a><br>
                  
 
                     </div>
-                    <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#eodb3">
-                      <div class="card-body">
+                    <div class="card text-white ql-card" data-toggle="collapse" data-target="#eodb3">
+                      <div class="card-body  ql-card-body">
                         Human Resources / Industrial Relations                         
                          <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
 
                       </div>
                     </div>
-                    <div id="eodb3" class="collapse content-collapse" data-parent="#accordion">
+                    <div id="eodb3" class="collapse content-collapse" data-parent="#accordion2">
                       <p class="sub-head">The Employees' State Insurance
                       </p>
-                      <a style="padding-left: 30px;" href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx" target="_blank">Employer Login</a><br>
-                      <a style="padding-left: 30px;" href="https://www.esic.nic.in/" target="_blank">Employees State Insurance Corporation</a><br><br>
+                      <a style="padding-left: 30px;" href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx" target="_blank">- Employer Login</a><br>
+                      <a style="padding-left: 30px;" href="https://www.esic.nic.in/" target="_blank">- Employees State Insurance Corporation</a><br><br>
                       <p class="sub-head">Provident Fund
                       </p>
-                      <a style="padding-left: 30px;" href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank">Employer Login</a><br>
-                      <a style="padding-left: 30px;" href="https://www.epfindia.gov.in/site_en/KYCS.php" target="_blank">                      Know PF Claim Status
+                      <a style="padding-left: 30px;" href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank">- Employer Login</a><br>
+                      <a style="padding-left: 30px;" href="https://www.epfindia.gov.in/site_en/KYCS.php" target="_blank">                      - Know PF Claim Status
                       </a><br>
-                      <a style="padding-left: 30px;" href="https://passbook.epfindia.gov.in/MemberPassBook/Login" target="_blank">Know PF Balance
+                      <a style="padding-left: 30px;" href="https://passbook.epfindia.gov.in/MemberPassBook/Login" target="_blank">- Know PF Balance
                       </a><br>
 
-                      <a style="padding-left: 30px;" href="https://www.epfindia.gov.in/site_en/For_Employees.php" target="_blank">Employee Registration
+                      <a style="padding-left: 30px;" href="https://www.epfindia.gov.in/site_en/For_Employees.php" target="_blank">- Employee Registration
                       </a><br>
-                      <a style="padding-left: 30px;" href="https://pensionersportal.gov.in/" target="_blank">Pensioners’ Portal
+                      <a style="padding-left: 30px;" href="https://pensionersportal.gov.in/" target="_blank">- Pensioners’ Portal
                       </a><br>
-                      <a style="padding-left: 30px;" href="https://www.epfindia.gov.in/site_en/" target="_blank">Employee Provident Fund
+                      <a style="padding-left: 30px;" href="https://www.epfindia.gov.in/site_en/" target="_blank">- Employee Provident Fund
                       </a><br><br>
-                      <a href="https://labour.gov.in/" target="_blank">Labour Department</a>
+                      <a href="https://labour.gov.in/" target="_blank">- Labour Department</a>
                       </a><br>
 
 
 
                       </div>
-                      <div class="card bg-success text-white ql-card" data-toggle="collapse" data-target="#eodb4">
-                        <div class="card-body">
+                      <div class="card text-white ql-card" data-toggle="collapse" data-target="#eodb4">
+                        <div class="card-body  ql-card-body">
                           Others                       
                            <i class="fa fa-angle-down icons-dropdown" style="margin-left:10px;"></i>
   
                         </div>
                       </div>
-                      <div id="eodb4" class="collapse content-collapse" data-parent="#accordion">
-                        <a href="https://www.shcilestamp.com/eStampIndia/VerifyCertificate.es?rDoAction=VerifyCert" target="_blank">                        E-Stamping - Verify Certificate
+                      <div id="eodb4" class="collapse content-collapse" data-parent="#accordion2">
+                        <a href="https://www.shcilestamp.com/eStampIndia/VerifyCertificate.es?rDoAction=VerifyCert" target="_blank">- E-Stamping - Verify Certificate
                         </a><br>
-                        <a href="https://doris.delhigovt.nic.in/" target="_blank">Property Registration (Delhi)
+                        <a href="https://doris.delhigovt.nic.in/" target="_blank">- Property Registration (Delhi)
                         </a><br>
-                        <a href="https://srams.delhi.gov.in/" target="_blank">Appointment for Property Registration (Delhi)
+                        <a href="https://srams.delhi.gov.in/" target="_blank">- Appointment for Property Registration (Delhi)
                         </a><br>
-                        <a href="https://efilingigr.maharashtra.gov.in/ereg/" target="_blank">Property Registration (Maharastra& Pune)
+                        <a href="https://efilingigr.maharashtra.gov.in/ereg/" target="_blank">- Property Registration (Maharastra& Pune)
                         </a><br>
-                        <a href="http://indiancourts.nic.in/" target="_blank">Indian Courts
+                        <a href="http://indiancourts.nic.in/" target="_blank">- Indian Courts
                         </a><br>
-                        <a href="http://www.labourcis.nic.in/" target="_blank">Online Registration Delhi Shops & Establishments
+                        <a href="http://www.labourcis.nic.in/" target="_blank">- Online Registration Delhi Shops & Establishments
                         </a><br>
-                        <a href="http://esla.delhi.gov.in/" target="_blank">E-SLA of Delhi Government
+                        <a href="http://esla.delhi.gov.in/" target="_blank">- E-SLA of Delhi Government
                         </a><br>
-                        <a href="https://eaadhaar.uidai.gov.in/" target="_blank">e-Aadhar
+                        <a href="https://eaadhaar.uidai.gov.in/" target="_blank">- e-Aadhar
                         </a><br>
-                        <a href="https://copyright.gov.in/UserRegistration/frmLoginPage.aspx" target="_blank">E-file of Copyright Application
+                        <a href="https://copyright.gov.in/UserRegistration/frmLoginPage.aspx" target="_blank">- E-file of Copyright Application
                         </a><br>
                   </div>
 
             </div>
            
           </div>
+        </div>
         </div>
         
         <footer class="bg-dark">
@@ -963,7 +981,7 @@ a{
                    <br>
                                <p class="footer-content">CONNECT</p>
         
-                               <a href="https://wa.me/919222255922" target="_blank">
+                               <a href="https://wa.me/919222256922" target="_blank">
                                 <i class="fab fa-whatsapp" style="font-size:28px; color: silver;">
         
                                </i>
